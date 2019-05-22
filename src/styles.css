@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background: whitesmoke;
+}
+
+.errorMessage {
+  color: crimson;
+}
+
+.mallet-preview > img {
+  width: 80%;
+  display: block;
+  position: absolute;
+}
