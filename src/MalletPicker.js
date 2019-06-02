@@ -4,13 +4,17 @@ import * as Options from "./Options";
 import { getMalletHeads, getMalletSizes } from "./helpers";
 
 const MalletPreview = ({ head, shaft }) => {
-  if (!(head || shaft)) return null;
-  const shaftSrc = shaft && require(`./img/mallets/horizontal/${shaft}.png`);
-  const headSrc = head && require(`./img/mallets/horizontal/Palki_Pravi_${head.toUpperCase()}_ball.png`)
+  console.log(head, shaft)
+  if (!(head && shaft)) return null;
+  const malletSrc = require(`./img/mallets/${shaft}_${head}.png`);
   return (
     <div className="mallet-preview">
-      { shaft && <img src={shaftSrc} /> }
-      { head && <img src={headSrc} /> }
+      <h2>
+        <span class="capitalize">{shaft.replace('-', ' ')}</span>
+        {' '}
+        <span class="uppercase">{head}</span>
+      </h2>
+      <img src={malletSrc} alt={`${shaft.replace('-', ' ')} ${head} mallet`}/>
     </div>
   );
 };
@@ -41,7 +45,6 @@ export default class MalletPicker extends Component {
 
   onChange = name => event => {
     const { value } = event.target;
-    const { setHead } = this.props;
     let newState = {
       error: null,
       [name]: value,

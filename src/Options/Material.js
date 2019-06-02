@@ -12,6 +12,6 @@ export default ({ value, onChange }) => (
   >
     <option value="rattan">Rattan</option>
     <option value="beech">Beech</option>
-    <option value="carbonFiber">Carbon Fiber</option>
+    <option value="carbon-fiber">Carbon Fiber</option>
   </Select>
 );

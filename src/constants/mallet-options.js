@@ -7,7 +7,7 @@ const shaft = {
     widths: [8, 8.5, 9],
     lengths: [36, 37, 38, 39, 40, 41, 42, 43]
   },
-  carbonFiber: {
+  'carbon-fiber': {
     widths: [8, 9],
     lengths: [36, 37, 38, 39, 40, 41]
   }

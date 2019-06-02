@@ -13,8 +13,20 @@
   color: crimson;
 }
 
+.mallet-preview {
+  margin-top: 2em;
+}
+
 .mallet-preview > img {
   width: 80%;
   display: block;
-  position: absolute;
+  margin: 0 auto;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
