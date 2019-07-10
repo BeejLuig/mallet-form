@@ -12,7 +12,7 @@ class App extends Component {
     this.state = {
       step: 0,
       shaft: null,
-      head: null
+      model: null
     };
   }
 
@@ -23,7 +23,7 @@ class App extends Component {
   render() {
     const { step } = this.state;
     const Step = [
-      () => <MalletPicker setShaft={this.setShaft} setHead={this.setHead} />
+      () => <MalletPicker setShaft={this.setShaft} setModel={this.setModel} />
     ][step];
     return (
       <div className="App">

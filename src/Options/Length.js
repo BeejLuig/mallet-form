@@ -11,6 +11,6 @@ export default ({ onChange, value, lengths }) => (
     defaultOption="Choose a length"
   >
     {lengths &&
-      lengths.map(length => <option key={length}>{length} mm</option>)}
+      lengths.map(length => <option key={length} value={length}>{length} mm</option>)}
   </Select>
 );

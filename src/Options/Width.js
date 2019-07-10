@@ -10,6 +10,6 @@ export default ({ value, onChange, widths }) => (
     onChange={onChange}
     defaultOption="Choose a width"
   >
-    {widths && widths.map(width => <option key={width}>{width} mm</option>)}
+    {widths && widths.map(width => <option key={width} value={width}>{width} mm</option>)}
   </Select>
 );

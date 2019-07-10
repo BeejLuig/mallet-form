@@ -1,4 +1,4 @@
-const shaft = {
+const handle = {
   rattan: {
     widths: [9, 10],
     lengths: [36, 37, 38, 39, 40, 41]
@@ -14,16 +14,16 @@ const shaft = {
 };
 
 const weights = [
-  { id: "weight_light", name: "Light" },
-  { id: "weight_medium", name: "Medium" },
-  { id: "weight_heavy", name: "Heavy" }
+  { id: "light", name: "Light" },
+  { id: "medium", name: "Medium" },
+  { id: "heavy", name: "Heavy" }
 ];
 
 export const MALLET_OPTIONS = {
   marimba: {
-    ...shaft,
+    ...handle,
     weights,
-    heads: [
+    models: [
       { id: "m1h", name: "M1 Hard" },
       { id: "m1m", name: "M1 Medium" },
       { id: "m1s", name: "M1 Soft" },
@@ -35,9 +35,9 @@ export const MALLET_OPTIONS = {
     ]
   },
   vibraphone: {
-    ...shaft,
+    ...handle,
     weights,
-    heads: [
+    models: [
       { id: "v1", name: "V1 Hard" },
       { id: "v2", name: "V2 Medium" },
       { id: "v3", name: "V3 Soft" }
@@ -50,7 +50,7 @@ export const MALLET_OPTIONS = {
 
 Type: Marimba, Vibraphone
 
-2nd Step: Mallet shaft
+2nd Step: Mallet handle
 
 Material:
   rattan:

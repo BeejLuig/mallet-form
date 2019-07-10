@@ -6,7 +6,6 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  background: whitesmoke;
 }
 
 .errorMessage {
@@ -29,4 +28,8 @@
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.order-codes {
+  margin: 0 auto;
 }
