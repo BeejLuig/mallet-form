@@ -131,54 +131,47 @@ export default class MalletPicker extends Component {
     } = this.state;
     const { widths, lengths } = getMalletSizes({ type, material });
     const { models, weights } = getMalletModels({ type });
-
     return (
       <>
         <form id="mallet" onSubmit={onSubmit}>
           {error && <p className="errorMessage">{error.message}</p>}
           <Options.Type onChange={onChange("type")} value={type} />
-          {
-            type && (
-              <>
-              <hr /> 
-              <h2>Head</h2>
-                <Options.Weight
-                  onChange={onChange("weight")}
-                  weights={weights}
-                  value={weight}
-                />
-                <Options.Model
-                  value={model}
-                  onChange={onChange("model")}
-                  models={models}
-                />
-                <hr />             
-                <h2>Handle</h2>
-                <Options.Material onChange={onChange("material")} value={material} />
-                <Options.Width
-                  onChange={onChange("width")}
-                  value={width}
-                  widths={widths}
-                />
-                <Options.Length
-                  onChange={onChange("length")}
-                  lengths={lengths}
-                  value={length}
-                />
-                <hr />
-                <Options.Quantity value={quantity} onChange={onChange('quantity')} />
-              </>
-            )
-          }
-          <input type="submit" />
-          <input type="reset" onClick={onReset} />
+          <Options.Quantity value={quantity} onChange={onChange('quantity')} disabled={!type} />
+          <h2>Head</h2>
+          <Options.Weight
+            onChange={onChange("weight")}
+            weights={weights}
+            value={weight}
+            disabled={!type}
+          />
+          <Options.Model
+            value={model}
+            onChange={onChange("model")}
+            models={models}
+            disabled={!type}
+          />           
+          <h2>Handle</h2>
+          <Options.Material onChange={onChange("material")} value={material} disabled={!type} />
+          <Options.Width
+            onChange={onChange("width")}
+            value={width}
+            widths={widths}
+            disabled={!type}
+          />
+          <Options.Length
+            onChange={onChange("length")}
+            lengths={lengths}
+            value={length}
+            disabled={!type}
+          />
+          <div className="field button-group">
+            <input className="button" type="submit" value="Save" disabled={!type} />
+            <input className="button" type="reset" onClick={onReset} />
+          </div>
+          <hr />
         </form>
-        { material && model && (
-          <>          
-            <h2>Preview</h2>
-            <MalletPreview material={material} model={model} />
-          </>
-        )}
+        { material && model &&         
+            <MalletPreview material={material} model={model} />}
         { orderCodes.length ? (
           <OrderCodes
             orderCodes={orderCodes}

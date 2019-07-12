@@ -1,7 +1,7 @@
 import React from "react";
 import Select from "../Select";
 
-export default ({ value, onChange }) => (
+export default ({ value, onChange, disabled }) => (
   <Select
     name="material"
     label="Material"
@@ -9,6 +9,7 @@ export default ({ value, onChange }) => (
     id="material"
     onChange={onChange}
     defaultOption="Choose a material"
+    disabled={disabled}
   >
     <option value="rattan">Rattan</option>
     <option value="beech">Beech</option>

@@ -6,6 +6,7 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  background: transparent;
 }
 
 .errorMessage {
@@ -13,13 +14,20 @@
 }
 
 .mallet-preview {
+  min-width: 300px;
+  max-width: 1000px;
   margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
+
 .mallet-preview > img {
-  width: 80%;
+  width: 100%;
   display: block;
-  margin: 0 auto;
 }
 
 .capitalize {
@@ -30,6 +38,205 @@
   text-transform: uppercase;
 }
 
+.code-label {
+  font-size: 12px;
+}
+
+.order-codes-container {
+  margin-top: 2em;
+}
+
+.App clipboard-copy.clipboard-copy {
+  display: block;
+  padding: 12px;
+}
+
+.App table {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.App tr {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;  
+}
+
+.App .quantity-td {
+  display: inline-flex;
+}
+
+.App .quantity-td .field {
+  margin-top: 0;
+}
+
+.App .quantity-td select {
+  border-right-width: 1px;
+}
+
+.App .quantity-td .button {
+  border-left-width: 1px;
+}
+
+.App th, td {
+  align-items: baseline;
+  vertical-align: middle;
+}
+
+.App th h1, th h2, th h3, th h4, th h5, th h6 {
+  margin: 0;
+}
+
+.App td > .field {
+  margin-top: 0;
+}
+
 .order-codes {
   margin: 0 auto;
+}
+
+.App p, label {
+  font: normal normal normal 13px/1.4em lulo-clean-w01-one-bold,sans-serif;
+  color: #3F0355;
+}
+
+.App h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+  margin-top: 1em;
+  font: normal normal bold 17px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+  color: #3F0355;
+}
+
+.App h2 {
+  font-size: 20px;
+}
+
+.App hr {
+  color: #3F0355;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.App > form {
+  max-width: 304px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.App .mw304 {
+  width: 304px;
+}
+
+.App .center {
+  margin: 0 auto;
+}
+
+.App .field {
+  margin-top: 0.75em;
+}
+
+.App .field > label {
+  display: block;
+  text-align: start;
+}
+
+.App .button-group {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.App .button-group > .button:nth-child(odd) {
+  border-bottom-width: 1px
+}
+
+.App .button-group > .button:nth-child(even) {
+  border-top-width: 1px;
+}
+
+.App select, .App .button {
+  font: 400 11px system-ui;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(166, 166, 166);
+  border-image: initial;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+  background-color: rgba(255, 255, 255, 1);
+  color: #000000;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(145, 145, 145, 1);
+  margin: 0;
+  padding: 0 45px 0 18px;
+  cursor: pointer;
+  position: relative;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 46px;
+  height: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.App .button {
+  padding: 0 18px;
+  min-width: initial;
+}
+
+.App .select-container {
+  margin: 0;
+  display: flex;
+  max-width: 100%;
+  min-width: 50px;
+  min-height: 46px;
+}
+
+.App .select-arrow {
+  top: 0;
+  right: 0;
+  display: block;
+  content: '';
+  height: 42px;
+  width: 45px;
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+  right: 47px;
+  padding: 14px;
+  pointer-events: none;
+}
+
+.App select:hover, .App .button:hover {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(82, 82, 82, 1);
+  background-color: rgba(242, 250, 249, 1);
+}
+
+.App select[disabled], .App .button[disabled] {
+    border-width: 2px;
+  border-color: rgba(204, 204, 204, 1);
+  color: #D4D4D4;
+  background-color: transparent;
+}
+
+.App select:focus, .App .button:focus {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
 }

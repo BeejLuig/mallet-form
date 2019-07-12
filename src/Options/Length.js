@@ -1,7 +1,7 @@
 import React from "react";
 import Select from "../Select";
 
-export default ({ onChange, value, lengths }) => (
+export default ({ onChange, value, lengths, disabled }) => (
   <Select
     name="length"
     label="Length"
@@ -9,6 +9,7 @@ export default ({ onChange, value, lengths }) => (
     value={value}
     onChange={onChange}
     defaultOption="Choose a length"
+    disabled={disabled}
   >
     {lengths &&
       lengths.map(length => <option key={length} value={length}>{length} mm</option>)}

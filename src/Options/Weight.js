@@ -1,7 +1,7 @@
 import React from "react";
 import Select from "../Select";
 
-export default ({ value, onChange, weights }) => (
+export default ({ value, onChange, weights, disabled }) => (
   <Select
     name="weight"
     label="Weight"
@@ -9,6 +9,7 @@ export default ({ value, onChange, weights }) => (
     onChange={onChange}
     value={value}
     defaultOption="Choose a weight"
+    disabled={disabled}
   >
     {weights &&
       weights.map(weight => (

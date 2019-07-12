@@ -1,7 +1,7 @@
 import React from "react";
 import Select from "../Select";
 
-export default ({ onChange, value, models }) => (
+export default ({ onChange, value, models, disabled }) => (
   <Select
     name="model"
     label="Model"
@@ -9,6 +9,7 @@ export default ({ onChange, value, models }) => (
     value={value}
     onChange={onChange}
     defaultOption="Choose a strength"
+    disabled={disabled}
   >
     {models &&
       models.map(model => (
