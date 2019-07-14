@@ -7,6 +7,8 @@
   font-family: sans-serif;
   text-align: center;
   background: transparent;
+  max-width: 608px;
+  margin: 0 auto;
 }
 
 .errorMessage {
@@ -49,6 +51,28 @@
 .App clipboard-copy.clipboard-copy {
   display: block;
   padding: 12px;
+}
+
+.App .mini-preview {
+  width: 200px;
+  overflow: hidden;
+}
+
+.App .mini-preview > img {
+  width: 100%;
+}
+
+@media screen and (max-width: 420px) {
+  .App .mini-preview {
+    width: initial;
+  }
+  .App .mini-preview > img {
+    width: 300%;
+  }
+}
+
+.App .flex {
+  display: flex;
 }
 
 .App table {
@@ -111,7 +135,7 @@
 }
 
 .App h2 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .App hr {
@@ -124,7 +148,6 @@
 }
 
 .App > form {
-  max-width: 304px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -133,6 +156,10 @@
 
 .App .mw304 {
   width: 304px;
+}
+
+.App .w50p {
+  width: 50%;
 }
 
 .App .center {
@@ -174,7 +201,6 @@
   -moz-appearance: none;
   font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
   background-color: rgba(255, 255, 255, 1);
-  color: #000000;
   border-width: 2px;
   border-style: solid;
   border-color: rgba(145, 145, 145, 1);
@@ -189,6 +215,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   display: block;
+  color: #3F0355;
 }
 
 .App .button {
@@ -227,7 +254,7 @@
 }
 
 .App select[disabled], .App .button[disabled] {
-    border-width: 2px;
+  border-width: 2px;
   border-color: rgba(204, 204, 204, 1);
   color: #D4D4D4;
   background-color: transparent;

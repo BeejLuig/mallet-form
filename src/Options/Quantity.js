@@ -3,8 +3,9 @@ import Select from '../Select';
 
 const oneToTen = Array.apply(null, { length: 10 })
   .map((_, i) => `${i + 1} pair${i ? 's' : ''}`);
-export default ({ value, onChange, hideLabel, disabled }) => (
+export default ({ value, onChange, hideLabel, disabled, ...props }) => (
   <Select
+    {...props}
     onChange={onChange}
     name="quantity"
     id="quantity" 

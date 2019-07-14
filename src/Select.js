@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 
 export default ({
   name,
@@ -8,16 +8,14 @@ export default ({
   onChange,
   id,
   children,
-  defaultOption
+  defaultOption,
+  className
 }) => {
   const ref = useRef();
-  useEffect(() => {
-    console.log({ ref })
-  });
   return (
-    <div className="field">
+    <div className={`field ${className}`}>
       <label htmlFor={name}>{label}</label>
-      <div className="select-container" onClick={() => ref.current && ref.current.click()}>
+      <div className={`select-container`} onClick={() => ref.current && ref.current.click()}>
         <select id={id} name={name} value={value} onChange={onChange} disabled={disabled} ref={ref}>
           {defaultOption && <option value="" hidden>{defaultOption}</option>}
           {children}

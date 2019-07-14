@@ -16,10 +16,6 @@ class App extends Component {
     };
   }
 
-  componentDidUpdate() {
-    console.log(this.state);
-  }
-
   render() {
     const { step } = this.state;
     const Step = [

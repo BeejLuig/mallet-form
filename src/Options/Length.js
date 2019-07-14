@@ -1,8 +1,9 @@
 import React from "react";
 import Select from "../Select";
 
-export default ({ onChange, value, lengths, disabled }) => (
+export default ({ onChange, value, lengths, disabled, ...props }) => (
   <Select
+    {...props}
     name="length"
     label="Length"
     id="length"
