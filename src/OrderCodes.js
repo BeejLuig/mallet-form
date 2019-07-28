@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Quantity from './Options/Quantity';
 import '@github/clipboard-copy-element';
 
 export default ({ orderCodes=[], onClear, onRemove, onUpdate }) => {
+  const [copied, setCopied] = useState(false);
   const codeLabel = orderCode => `${orderCode.value}x${orderCode.quantity}`;
   const codes = orderCodes.map(codeLabel);
+  function onClipboardCopy(event) { setCopied(true) }
+    useEffect(() => {
+      document.addEventListener('clipboard-copy', onClipboardCopy);
+      return () => {
+        document.removeEventListener('clipboard-copy', onClipboardCopy);
+      }
+    });
+    useEffect(() => {
+      setCopied(false);
+    }, [codes.join()])
   return (
     <div className="order-codes-container">
       <div className="order-codes">
@@ -26,7 +37,7 @@ export default ({ orderCodes=[], onClear, onRemove, onUpdate }) => {
         </div>
       </div>
       <div className="button-group center">
-        <clipboard-copy class="button clipboard-copy" value={codes.join('\n')}>Copy to clipboard</clipboard-copy>
+        <clipboard-copy class="button clipboard-copy" value={codes.join('\n')}>{ copied ? `Copied!` : `Copy to clipboard`}</clipboard-copy>
         <button className="button" onClick={onClear}>Clear codes</button>
       </div>
     </div>
