@@ -134,7 +134,7 @@ export default class MalletPicker extends Component {
         <form id="mallet" onSubmit={onSubmit}>
           {error && <p className="errorMessage">{error.message}</p>}
           <Options.Type onChange={onChange("type")} value={type} />
-            <h2>Head</h2>
+            <h2 className="category-heading">Head</h2>
           <div className="flex">
             <Options.Weight
               onChange={onChange("weight")}
@@ -152,7 +152,7 @@ export default class MalletPicker extends Component {
             />
           </div>
           <div>
-          <h2>Handle</h2>
+          <h2 className="category-heading">Handle</h2>
             <div className="flex">
               <Options.Material 
                 onChange={onChange("material")} 

@@ -26,6 +26,9 @@
   padding-right: 2em;
 }
 
+.category-heading {
+  font-weight: 500;
+}
 
 .mallet-preview > img {
   width: 100%;
