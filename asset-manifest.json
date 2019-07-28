@@ -1,9 +1,9 @@
 {
-  "main.css": "/mallet-form/static/css/main.db16f43d.chunk.css",
-  "main.js": "/mallet-form/static/js/main.4c5d10d4.chunk.js",
-  "main.js.map": "/mallet-form/static/js/main.4c5d10d4.chunk.js.map",
-  "static/js/1.1fbdae47.chunk.js": "/mallet-form/static/js/1.1fbdae47.chunk.js",
-  "static/js/1.1fbdae47.chunk.js.map": "/mallet-form/static/js/1.1fbdae47.chunk.js.map",
+  "main.css": "/mallet-form/static/css/main.1002aff2.chunk.css",
+  "main.js": "/mallet-form/static/js/main.f7b3e1c9.chunk.js",
+  "main.js.map": "/mallet-form/static/js/main.f7b3e1c9.chunk.js.map",
+  "static/js/1.fb2ec73c.chunk.js": "/mallet-form/static/js/1.fb2ec73c.chunk.js",
+  "static/js/1.fb2ec73c.chunk.js.map": "/mallet-form/static/js/1.fb2ec73c.chunk.js.map",
   "runtime~main.js": "/mallet-form/static/js/runtime~main.96f822ae.js",
   "runtime~main.js.map": "/mallet-form/static/js/runtime~main.96f822ae.js.map",
   "static/media/rattan_m1h.png": "/mallet-form/static/media/rattan_m1h.68031c9c.png",
@@ -39,8 +39,8 @@
   "static/media/rattan_v1.png": "/mallet-form/static/media/rattan_v1.f0d143cb.png",
   "static/media/rattan_v2.png": "/mallet-form/static/media/rattan_v2.9ee407ed.png",
   "static/media/rattan_v3.png": "/mallet-form/static/media/rattan_v3.bc38c341.png",
-  "static/css/main.db16f43d.chunk.css.map": "/mallet-form/static/css/main.db16f43d.chunk.css.map",
+  "static/css/main.1002aff2.chunk.css.map": "/mallet-form/static/css/main.1002aff2.chunk.css.map",
   "index.html": "/mallet-form/index.html",
-  "precache-manifest.7be038579f1ca318926580bda69add52.js": "/mallet-form/precache-manifest.7be038579f1ca318926580bda69add52.js",
+  "precache-manifest.44b8a959d80a580f63f8732f434b6c50.js": "/mallet-form/precache-manifest.44b8a959d80a580f63f8732f434b6c50.js",
   "service-worker.js": "/mallet-form/service-worker.js"
 }
