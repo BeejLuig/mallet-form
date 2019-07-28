@@ -129,6 +129,8 @@ export default class MalletPicker extends Component {
     const { models, weights } = getMalletModels({ type });
     return (
       <>
+        {material && model &&
+          <MalletPreview material={material} model={model} />}
         <form id="mallet" onSubmit={onSubmit}>
           {error && <p className="errorMessage">{error.message}</p>}
           <Options.Type onChange={onChange("type")} value={type} />
@@ -185,8 +187,6 @@ export default class MalletPicker extends Component {
             <input className="button" type="reset" onClick={onReset} />
           </div>
         </form>
-        { material && model &&
-          <MalletPreview material={material} model={model} />}
         { orderCodes.length ? (
           <OrderCodes
             orderCodes={orderCodes}

@@ -4,11 +4,11 @@
 }
 
 .App {
-  font-family: sans-serif;
   text-align: center;
   background: transparent;
   max-width: 608px;
   margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
 }
 
 .errorMessage {
@@ -45,7 +45,7 @@
 }
 
 .order-codes-container {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .App clipboard-copy.clipboard-copy {
@@ -75,13 +75,13 @@
   display: flex;
 }
 
-.App table {
+.App .order-codes {
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
 
-.App tr {
+.App .order-codes__row {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -89,48 +89,39 @@
   align-content: center;  
 }
 
-.App .quantity-td {
+.App .quantity-data {
   display: inline-flex;
 }
 
-.App .quantity-td .field {
+.App .quantity-data .field {
   margin-top: 0;
 }
 
-.App .quantity-td select {
+.App .quantity-data select {
   border-right-width: 1px;
 }
 
-.App .quantity-td .button {
+.App .quantity-data .button {
   border-left-width: 1px;
-}
-
-.App th, td {
-  align-items: baseline;
-  vertical-align: middle;
-}
-
-.App th h1, th h2, th h3, th h4, th h5, th h6 {
-  margin: 0;
-}
-
-.App td > .field {
-  margin-top: 0;
 }
 
 .order-codes {
   margin: 0 auto;
 }
 
+.order-codes__wrapper {
+  margin-top: 1em;
+}
+
 .App p, label {
-  font: normal normal normal 13px/1.4em lulo-clean-w01-one-bold,sans-serif;
+  font: normal normal normal 13px/1.4em 'Poppins',sans-serif;
   color: #3F0355;
 }
 
 .App h1, h2, h3, h4, h5, h6 {
   text-align: left;
   margin-top: 1em;
-  font: normal normal bold 17px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+  font: normal normal bold 17px/1.4em 'Poppins',sans-serif;
   color: #3F0355;
 }
 
@@ -199,7 +190,7 @@
   border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
-  font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+  font: normal normal normal 14px/1.4em 'Poppins',sans-serif;
   background-color: rgba(255, 255, 255, 1);
   border-width: 2px;
   border-style: solid;
