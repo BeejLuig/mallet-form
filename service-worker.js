@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/mallet-form/precache-manifest.ab0cb09b5de7144b311b6dddeada8667.js"
+  "/mallet-form/precache-manifest.7be038579f1ca318926580bda69add52.js"
 );
 
 workbox.clientsClaim();
