@@ -183,7 +183,7 @@ export default class MalletPicker extends Component {
             </div>
           </div>
           <div className="field button-group">
-            <input className="button" type="submit" value="Save" disabled={!type} />
+            <input className="button" type="submit" value="Add" disabled={!type} />
             <input className="button" type="reset" onClick={onReset} />
           </div>
         </form>
