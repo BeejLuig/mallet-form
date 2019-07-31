@@ -1,7 +1,7 @@
 {
   "main.css": "/mallet-form/static/css/main.1002aff2.chunk.css",
-  "main.js": "/mallet-form/static/js/main.f7b3e1c9.chunk.js",
-  "main.js.map": "/mallet-form/static/js/main.f7b3e1c9.chunk.js.map",
+  "main.js": "/mallet-form/static/js/main.41d012fd.chunk.js",
+  "main.js.map": "/mallet-form/static/js/main.41d012fd.chunk.js.map",
   "static/js/1.fb2ec73c.chunk.js": "/mallet-form/static/js/1.fb2ec73c.chunk.js",
   "static/js/1.fb2ec73c.chunk.js.map": "/mallet-form/static/js/1.fb2ec73c.chunk.js.map",
   "runtime~main.js": "/mallet-form/static/js/runtime~main.96f822ae.js",
@@ -41,6 +41,6 @@
   "static/media/rattan_v3.png": "/mallet-form/static/media/rattan_v3.bc38c341.png",
   "static/css/main.1002aff2.chunk.css.map": "/mallet-form/static/css/main.1002aff2.chunk.css.map",
   "index.html": "/mallet-form/index.html",
-  "precache-manifest.44b8a959d80a580f63f8732f434b6c50.js": "/mallet-form/precache-manifest.44b8a959d80a580f63f8732f434b6c50.js",
+  "precache-manifest.b86053a599cd96976f6acc1c74407fb3.js": "/mallet-form/precache-manifest.b86053a599cd96976f6acc1c74407fb3.js",
   "service-worker.js": "/mallet-form/service-worker.js"
 }
