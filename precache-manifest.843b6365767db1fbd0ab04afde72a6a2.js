@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/mallet-form/static/media/carbon-fiber_m2m.1856c602.png"
   },
   {
-    "revision": "41d012fd51e781746669",
-    "url": "/mallet-form/static/css/main.1002aff2.chunk.css"
+    "revision": "aa0e48fabb48b6b928be",
+    "url": "/mallet-form/static/css/main.22d1f9d7.chunk.css"
   },
   {
     "revision": "fb2ec73c6fe0760e8421",
@@ -76,8 +76,8 @@ self.__precacheManifest = [
     "url": "/mallet-form/static/media/carbon-fiber_m2h.adda877f.png"
   },
   {
-    "revision": "41d012fd51e781746669",
-    "url": "/mallet-form/static/js/main.41d012fd.chunk.js"
+    "revision": "aa0e48fabb48b6b928be",
+    "url": "/mallet-form/static/js/main.aa0e48fa.chunk.js"
   },
   {
     "revision": "cfa299f0e9cd9c87e9970cb5ce936cd9",
@@ -148,7 +148,7 @@ self.__precacheManifest = [
     "url": "/mallet-form/static/media/rattan_v3.bc38c341.png"
   },
   {
-    "revision": "1913d5d9907c93fae1b84eb00c7bffab",
+    "revision": "ec62be016db9d83807a3dcf948557b0d",
     "url": "/mallet-form/index.html"
   }
 ];
