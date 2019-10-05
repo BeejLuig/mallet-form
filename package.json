@@ -6,7 +6,7 @@
   "homepage": "http://bjcantlupe.com/mallet-form",
   "main": "src/index.js",
   "dependencies": {
-    "@github/clipboard-copy-element": "^1.0.1",
+    "@github/clipboard-copy-element": "^1.0.6",
     "react": "16.8.3",
     "react-dom": "16.10.2",
     "react-scripts": "2.0.3"
